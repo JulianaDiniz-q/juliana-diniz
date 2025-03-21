@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:rgb(255, 252, 246) ;
+    letter-spacing: 0.1em;
+}
+.bodoni-moda-uniquifier> {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 1fr 10%;
+    grid-template-areas: 
+    'header header'
+    'aside content'
+    'footer footer'
+    ;
+}
+
+header{
+    grid-column: 1/4;
+    grid-area: header;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#header-links-container{
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+
+}
+#header-links{
+    padding:5px;
+    border-radius: 10%;
+}
+
+aside{
+    grid-area:aside;
+    background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fE1FRElUQSVDMyU4NyVDMyU4M098ZW58MHx8MHx8fDA%3D');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.content{
+    grid-area:content;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    grid-column: 1/4;
+    grid-area:footer;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1,h2{
+    color: rgba(76, 121, 80, 1);
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, monospace;
+    color: rgba(165, 42, 42, 0.486);
+}
+
+h4{
+    color:rgb(238, 171, 48);
+}
+
+
+a{
+    text-decoration: none;
+    color:rgba(76, 121, 80, 1);
+}
+a:hover{
+    color:rgba(76, 121, 80, 0.459);
+    text-decoration: underline;
+}
+
+
+p {
+    margin-bottom: 50px; 
+    color: #333333;
+}
+
+.icons{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    
+}
+
+#contact-image{
+    max-height: 30px;
+    width: auto;
+}
+#image-contact-section{
+    max-height: 20px;
+    width: auto;
+}
+
+.ig:hover{
+    opacity: 50%;
+}
+.email:hover{
+    opacity: 50%;
+}
