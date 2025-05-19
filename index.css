@@ -69,13 +69,8 @@ header {
     text-align: left;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     color: brown; /* Títulos em marrom */
-}
-
-h3, h4 {
-    color: brown; /* Títulos em marrom */
-    margin-bottom: 10px;
 }
 
 ul {
@@ -99,7 +94,6 @@ p {
 /* Imagem do corpo */
 .image-body-content {
     width: 100%;
-    max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin-top: 20px;
@@ -123,19 +117,23 @@ section.contact-section {
 
 .contact-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 20px;
+    gap: 20px; /* Espaçamento entre os ícones */
 }
 
 .contact-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50px; /* Ajustado para garantir o tamanho correto */
+    justify-content: center;
 }
 
 .contact-item img {
-    width: 40px;
-    height: 40px;
+    width: 50px; /* Imagem do ícone ajustada */
+    height: 50px; /* Imagem do ícone ajustada */
+    object-fit: contain;
 }
 
 .contact-item span {
@@ -168,8 +166,8 @@ section.contact-section {
     }
 
     .contact-item img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 
     .contact-item span {
@@ -195,8 +193,8 @@ section.contact-section {
     }
 
     .contact-item img {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 
     .contact-item span {
