@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(255, 252, 246); /* Mantendo a cor de fundo */
+    background-color: rgb(255, 252, 246); /* Cor de fundo */
     color: #333; /* Cor do texto */
     letter-spacing: 0.1em;
     margin: 0;
@@ -69,8 +69,12 @@ header {
     text-align: left;
 }
 
+h1, h2 {
+    color: brown; /* Títulos em marrom */
+}
+
 h3, h4 {
-    color: brown;
+    color: brown; /* Títulos em marrom */
     margin-bottom: 10px;
 }
 
