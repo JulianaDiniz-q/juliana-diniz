@@ -1,98 +1,145 @@
-/* Resetando margens e paddings */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Resetando margens e padding padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Corpo da página */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f4;
-  line-height: 1.6;
-  overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff9f4; /* Mantendo a cor de fundo */
+    color: #333; /* Cor do texto */
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding: 0;
 }
 
-/* Cabeçalho */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px; /* Adicionando o ajuste nas margens */
+    overflow-x: hidden; /* Evita overflow nas margens */
+}
+
+/* Header */
 header {
-  background-image: url('https://images.unsplash.com/photo-1692271861487-6ae09612aeab?w=500&auto=format&fit=crop&q=60');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+.header-text {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2rem;
+    color: #6A1B9A; /* Cor roxa */
+    font-weight: bold;
 }
 
-header h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-}
-
-/* Conteúdo principal */
+/* Content */
 .content {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 10px;
 }
 
-/* Listas */
+h3, h4 {
+    color: #6A1B9A;
+    margin-bottom: 10px;
+}
+
 ul {
-  list-style-type: none;
-  padding-left: 1.2rem;
+    list-style-type: none;
+    padding-left: 0;
 }
 
-li {
-  margin-bottom: 0.5rem;
+ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-/* Seção de contato */
-.contact-section {
-  background-color: #fff;
-  padding: 2rem;
-  text-align: center;
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.image-body-content {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Adjusting the sections */
+section.contact-section {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f3e5f5;
+    border-radius: 8px;
+}
+
+.contact-section h3 {
+    font-size: 1.8rem;
+    color: #6A1B9A;
 }
 
 .contact-icons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-item img {
-  width: 30px;
-  height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header h2 {
-    font-size: 1.2rem;
-  }
-
-  .content {
-    padding: 1rem;
-  }
-
-  .contact-icons {
-    flex-direction: column;
-    align-items: center;
-  }
+.contact-item span {
+    margin-top: 10px;
+    color: #333;
+    font-size: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-text {
+        font-size: 1.6rem;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+
+    .contact-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-item span {
+        font-size: 0.9
