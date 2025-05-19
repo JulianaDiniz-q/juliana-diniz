@@ -7,21 +7,22 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fff9f4; /* Mantendo a cor de fundo */
+    background-color: rgb(255, 252, 246); /* Mantendo a cor de fundo */
     color: #333; /* Cor do texto */
     letter-spacing: 0.1em;
     margin: 0;
     padding: 0;
 }
 
+/* Container */
 .container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    padding: 0 10px; /* Adicionando o ajuste nas margens */
-    overflow-x: hidden; /* Evita overflow nas margens */
+    padding: 0 15px; /* Ajuste para não cortar no celular */
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -29,24 +30,47 @@ header {
     width: 100%;
     text-align: center;
     margin-top: 20px;
+    background-image: url('https://images.unsplash.com/photo-1692271861487-6ae09612aeab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9yZXN0JTIwYmx1ciUyMGxpZ2h0JTIwZ3JlZW58ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
 }
 
 .header-text {
     font-family: 'Bodoni Moda', serif;
-    font-size: 2rem;
-    color: #6A1B9A; /* Cor roxa */
-    font-weight: bold;
+    font-size: 2.5rem;
+    color: rgb(113, 173, 118); /* Cor verde */
+    text-shadow: 1px 1px 0.2em wheat;
+    font-weight: 700;
+}
+
+#header-links-container {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#header-links {
+    padding: 5px;
+    border-radius: 10%;
 }
 
 /* Content */
 .content {
     width: 100%;
     max-width: 1100px;
-    padding: 0 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
 }
 
 h3, h4 {
-    color: #6A1B9A;
+    color: brown;
     margin-bottom: 10px;
 }
 
@@ -56,26 +80,28 @@ ul {
 }
 
 ul li {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     color: #333;
     margin-bottom: 20px;
 }
 
+/* Imagem do corpo */
 .image-body-content {
     width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin-top: 20px;
 }
 
-/* Adjusting the sections */
+/* Ajustes na seção de contato */
 section.contact-section {
     width: 100%;
     max-width: 1100px;
@@ -88,7 +114,7 @@ section.contact-section {
 
 .contact-section h3 {
     font-size: 1.8rem;
-    color: #6A1B9A;
+    color: rgb(113, 173, 118);
 }
 
 .contact-icons {
@@ -114,13 +140,14 @@ section.contact-section {
     font-size: 1rem;
 }
 
+/* Responsividade */
 @media screen and (max-width: 768px) {
     .container {
         padding: 0 20px;
     }
 
     header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .header-text {
@@ -142,4 +169,33 @@ section.contact-section {
     }
 
     .contact-item span {
-        font-size: 0.9
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .header-text {
+        font-size: 1.4rem;
+    }
+
+    .content p, .content h3, .content h4 {
+        font-size: 1rem;
+    }
+
+    .contact-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .contact-item span {
+        font-size: 0.8rem;
+    }
+}
