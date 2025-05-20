@@ -17,7 +17,7 @@ header {
     padding: 40px 0;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('');
+        url('https://plus.unsplash.com/premium_photo-1684470563670-a11e9fc64a53?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGJlYWNofGVufDB8fDB8fHww');
     background-size: cover;
     background-position: center;
     color: white;
@@ -27,7 +27,7 @@ header {
     font-family: 'Bodoni Moda', serif;
     font-size: 2.5em;
     font-weight: 700;
-    color: white;
+    color: #82622b;
     text-shadow: none; /* removido o efeito de brilho */
 }
 
