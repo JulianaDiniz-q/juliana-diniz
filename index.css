@@ -1,205 +1,78 @@
-/* Resetando margens e padding padrões do navegador */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(255, 252, 246); /* Cor de fundo */
-    color: #333; /* Cor do texto */
-    letter-spacing: 0.1em;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Mono', 'Roboto', sans-serif;
+    background-color: rgb(255, 252, 246); /* fundo bege claro */
+    color: #333;
 }
 
-/* Container */
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    padding: 0 15px; /* Ajuste para não cortar no celular */
-    overflow-x: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Header */
 header {
-    width: 100%;
     text-align: center;
-    margin-top: 20px;
-    background-image: url('https://images.unsplash.com/photo-1692271861487-6ae09612aeab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9yZXN0JTIwYmx1ciUyMGxpZ2h0JTIwZ3JlZW58ZW58MHx8MHx8fDA%3D');
+    padding: 40px 0;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1692271861487-6ae09612aeab?w=500&auto=format&fit=crop&q=60');
     background-size: cover;
     background-position: center;
-    padding: 30px 0;
+    color: white;
 }
+
 
 .header-text {
     font-family: 'Bodoni Moda', serif;
-    font-size: 2.5rem;
-    color: white; /* Cor verde */
-    text-shadow: 1px 1px 0.2em wheat;
+    font-size: 2.5em;
     font-weight: 700;
+    color:white; /* verde suave */
+    text-shadow: 1px 1px 0.2em wheat;
 }
 
-#header-links-container {
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    width: 50%;
-    flex-wrap: wrap;
-    gap: 10px;
+#header-links-container h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: rgb(113, 173, 118);
+    text-shadow: 1px 1px 0.2em wheat;
 }
 
-#header-links {
-    padding: 5px;
-    border-radius: 10%;
+h1, h2, h3, h4 {
+    color: brown;
 }
 
-/* Content */
-.content {
-    width: 100%;
-    max-width: 1100px;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: left;
+.content h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
 }
 
-h1, h2 {
-    color: brown; /* Títulos em marrom */
-}
-
-h3, h4 {
-    color: brown; /* Títulos em marrom */
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul li {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
+.content ul {
+    padding-left: 20px;
     margin-bottom: 20px;
 }
 
-/* Imagem do corpo */
-.image-body-content {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
+.content li {
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
-/* Ajustes na seção de contato */
-section.contact-section {
-    width: 100%;
-    max-width: 1100px;
-    padding: 20px;
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0;
+    display: block;
+    border-radius: 8px;
+}
+
+.contact-section {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    margin-top: 40px;
     text-align: center;
-    margin-top: 50px;
-    background-color: #f3e5f5;
     border-radius: 8px;
 }
 
 .contact-section h3 {
-    font-size: 1.8rem;
-    color: rgb(113, 173, 118);
-}
-
-.contact-icons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.contact-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-item img {
-    width: 40px;
-    height: 40px;
-}
-
-.contact-item span {
-    margin-top: 10px;
-    color: #333;
-    font-size: 1rem;
-}
-
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 0 20px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .header-text {
-        font-size: 1.6rem;
-    }
-
-    .content {
-        padding: 0 10px;
-    }
-
-    .contact-icons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-item img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .contact-item span {
-        font-size: 0.9rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container {
-        padding: 0 10px;
-    }
-
-    header h1 {
-        font-size: 1.6rem;
-    }
-
-    .header-text {
-        font-size: 1.4rem;
-    }
-
-    .content p, .content h3, .content h4 {
-        font-size: 1rem;
-    }
-
-    .contact-item img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .contact-item span {
-        font-size: 0.8rem;
-    }
-}
+    font-size:
