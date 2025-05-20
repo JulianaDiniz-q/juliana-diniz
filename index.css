@@ -27,14 +27,14 @@ header {
     font-family: 'Bodoni Moda', serif;
     font-size: 2.5em;
     font-weight: 700;
-    color: #82622b;
+    color: white;
     text-shadow: none; /* removido o efeito de brilho */
 }
 
 #header-links-container h2 {
     font-size: 1.5em;
     margin-top: 10px;
-    color: rgb(113, 173, 118);
+    color: #82622b;
     text-shadow: none; /* removido o efeito de brilho */
 }
 
