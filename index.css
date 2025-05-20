@@ -64,38 +64,24 @@ h1, h2, h3, h4 {
     display: block;
     border-radius: 8px;
 }
-
-.contato {
-    background-color: #f7eee3;
+.contato-section {
+    background-color: #fffaf4;
     padding: 40px 20px;
     margin-top: 60px;
-    text-align: center;
-    border-top: 3px solid #d4b195;
-}
-
-.contato h3 {
-    color: brown;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.contato p {
-    font-size: 1em;
-    color: #444;
-    margin-bottom: 20px;
+    border-top: 2px solid #e0c9b0;
+    border-radius: 8px;
 }
 
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
-    text-align: left;
 }
 
 .formulario-contato label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #5a4a42;
+    color: brown;
 }
 
 .formulario-contato input,
@@ -118,6 +104,7 @@ h1, h2, h3, h4 {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .formulario-contato button:hover {
@@ -125,8 +112,9 @@ h1, h2, h3, h4 {
 }
 
 .contato-info {
+    text-align: center;
     margin-top: 20px;
-    color: #333;
+    color: #444;
 }
 
 .contato-info a {
@@ -137,4 +125,3 @@ h1, h2, h3, h4 {
 .contato-info a:hover {
     text-decoration: underline;
 }
-
