@@ -39,7 +39,7 @@ header {
 .header-text {
     font-family: 'Bodoni Moda', serif;
     font-size: 2.5rem;
-    color: rgb(113, 173, 118); /* Cor verde */
+    color: white; /* Cor verde */
     text-shadow: 1px 1px 0.2em wheat;
     font-weight: 700;
 }
